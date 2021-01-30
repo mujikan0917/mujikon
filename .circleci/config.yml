@@ -7,10 +7,19 @@ workflows:
   sample:
     jobs:
       - build-and-test
+      - test
 jobs:
   build-and-test:  
     docker:
       - image: cimg/python:3.8
+    parallelism: 2
+    working_directory: ~/repo
+    steps:
+      - checkout
+  test:
+    docker:
+      - image: cimg/python:3.8
+    parallelism: 2
     working_directory: ~/repo
     steps:
       - checkout
