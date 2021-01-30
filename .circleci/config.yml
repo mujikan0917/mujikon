@@ -26,6 +26,10 @@ jobs:
       - image: cimg/python:3.7
       - image: cimg/python:3.6
       - image: cimg/python:3.5
+      - image: cimg/python:3.4
+      - image: cimg/python:3.3
+      - image: cimg/python:3.2
+      - image: cimg/python:3.1
     working_directory: ~/repo
     steps:
       - checkout
