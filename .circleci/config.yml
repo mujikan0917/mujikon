@@ -23,6 +23,16 @@ jobs:
   test:
     docker:
       - image: cimg/python:3.8
+    docker:
+      - image: cimg/python:3.8
+    docker:
+      - image: cimg/python:3.8
+    docker:
+      - image: cimg/python:3.8
+    docker:
+      - image: cimg/python:3.8
+    docker:
+      - image: cimg/python:3.8
     working_directory: ~/repo
     steps:
       - checkout
